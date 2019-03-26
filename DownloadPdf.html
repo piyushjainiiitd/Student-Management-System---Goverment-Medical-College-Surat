@@ -1,0 +1,29 @@
+ <!DOCTYPE html>  
+ <html>  
+      <head>  
+           <title>Webslesson Tutorial | Export HTML Table data to PDF using TCPDF in PHP</title>  
+           <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />            
+      </head>  
+      <body>  
+           <br /><br />  
+           <div class="container" style="width:700px;">  
+                <h3 align="center">Export HTML Table data to PDF using TCPDF in PHP</h3><br />  
+                <div class="table-responsive">  
+                     <table class="table table-bordered">  
+                          <tr>  
+                                <th width="5%">Enrollment ID</th>  
+                                <th width="30%">SurName</th>  
+                                <th width="10%">FirstName</th>
+                          </tr>  
+                     <?php  
+                     echo fetch_data();  
+                     ?>  
+                     </table>  
+                     <br />  
+                     <form method="post">  
+                          <input type="submit" name="create_pdf" class="btn btn-danger" value="Create PDF" />  
+                     </form>  
+                </div>  
+           </div>  
+      </body>  
+ </html>  

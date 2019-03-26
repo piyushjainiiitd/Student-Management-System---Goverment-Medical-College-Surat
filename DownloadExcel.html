@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<title>Student Management System/Login</title>
+	<link rel="shortcut icon" type="image/x-icon" href="image/favicon.ico" />
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Arvo">
+	<link rel="stylesheet"  href="css/downloadExcel.css" /> 
+	<script src="js/downloadExcel.js"></script>
+</head>
+<form id="regForm" method="POST" action="temp1.php">
+  <table>
+        <th colspan="2" >
+               <h2> Select Fields </h2>
+        </th>
+        <tr>
+            <td>Enrollment ID </td>
+            <td><input class="CheckClass" onclick="uncheck()"  type="checkbox" name="1" id="EnrollmentId" value="EnrollmentId"/></td>
+        </tr>
+        <tr>
+            <td>Surname</td>
+            <td><input class="CheckClass" type="checkbox"  onclick="uncheck()" name="2" id="Surname" value="Surname"/></td>
+        </tr>
+        <tr>
+            <td>First Name</td>
+            <td><input class="CheckClass" type="checkbox" name="3" onclick="uncheck()" id="firstname" value="firstname"/></td>
+        </tr>
+        <tr>
+            <td>Second Name</td>
+            <td><input class="CheckClass" type="checkbox" name="4"  onclick="uncheck()" id="secondname" value="secondname"/></td>
+        </tr>
+        <tr>
+            <td>Mother Name</td>
+            <td><input class="CheckClass" type="checkbox" name="5" onclick="uncheck()" id="mothername" value="mothername"/></td>
+        </tr>
+        <tr>
+            <td>Adhaarcard Number </td>
+            <td><input class="CheckClass" onclick="uncheck()" type="checkbox" name="6" id="AadhaarNumber" value="AadhaarNumber"/></td>
+        </tr>
+        <tr>
+            <td>Permanent Address</td>
+            <td><input class="CheckClass" type="checkbox" onclick="uncheck()" name="7" id="permanentAddress" value="permanentAddress"/></td>
+        </tr>
+        <tr>
+            <td>Permanent City</td>
+            <td><input class="CheckClass" type="checkbox" name="8" onclick="uncheck()" id="permanentCity" value="permanentCity"/></td>
+
+        </tr>
+        <tr>
+            <td>Permanent Pincode</td>
+            <td><input class="CheckClass" type="checkbox" name="9" onclick="uncheck()" value="permanentPincode"id="permanentPincode"/></td>
+        </tr>
+        <tr>
+            <td>Permanent Phone</td>
+            <td><input class="CheckClass" type="checkbox" name="10" onclick="uncheck()" value="permanentPhone" id="permanentPhone"/></td>
+        </tr>
+        <tr>
+            <td>Permanent Mobile</td>
+            <td><input class="CheckClass" type="checkbox" name="11" onclick="uncheck()" value="permanentMobile" id="permanentMobile"/></td>
+        </tr>
+        <tr>
+            <td>Correspondance Address</td>
+            <td><input class="CheckClass" type="checkbox" name="12" onclick="uncheck()" value="correspondanceAddress" id="correspondanceAddress"/></td>
+        </tr>
+        <tr>
+            <td>Correspondance City</td>
+            <td><input class="CheckClass" type="checkbox" name="13" onclick="uncheck()" value="correspondanceCity" id="correspondanceCity"/></td>
+        </tr>
+        <tr>
+            <td>Correspondance Pincode</td>
+            <td><input class="CheckClass" type="checkbox" name="14" onclick="uncheck()" value="correspondancePincode" id="correspondancePincode"/></td>
+        </tr>
+        <tr>
+            <td>Correspondance Phone</td>
+            <td><input class="CheckClass" type="checkbox" name="15" onclick="uncheck()" value="correspondancePhone" id="correspondancePhone"/></td>
+        </tr>
+        <tr>
+            <td>Correspondance Mobile</td>
+            <td><input class="CheckClass" type="checkbox" name="16" onclick="uncheck()"value="correspondanceMobile" id="correspondanceMobile"/></td>
+        </tr>
+        <tr>
+            <td>Date Of Birth</td>
+            <td><input class="CheckClass" type="checkbox" name="17" onclick="uncheck()" value="dob" id="dob"/></td>
+        </tr>
+        <tr>
+            <td>Gender</td>
+            <td><input class="CheckClass" type="checkbox" name="18" value="gender" onclick="uncheck()" id="gender"/></td>
+        </tr>
+        <tr>
+            <td>Ph</td>
+            <td><input class="CheckClass" type="checkbox" name="19" value="ph" onclick="uncheck()" id="ph"/></td>
+        </tr>
+        <tr>
+            <td>Nationality</td>
+            <td><input class="CheckClass" type="checkbox" name="20" value="nationality" onclick="uncheck()" id="nationality"/></td>
+        </tr>
+        <tr>
+            <td>Caste</td>
+            <td><input class="CheckClass" type="checkbox" name="21" value="caste" onclick="uncheck()" id="caste"/></td>
+        </tr>
+        <tr>
+            <td>Sub Caste</td>
+            <td><input class="CheckClass" type="checkbox" name="22" value="subCaste" onclick="uncheck()" id="subCaste"/></td>
+        </tr>
+        <tr>
+            <td>Minority</td>
+            <td><input class="CheckClass" type="checkbox" name="23" value="minority" onclick="uncheck()" id="minority"/></td>
+        </tr>
+        <tr>
+            <td>Religion</td>
+            <td><input class="CheckClass" type="checkbox" name="24" value="religion" onclick="uncheck()" id="religion"/></td>
+        </tr>
+        <tr>
+            <td>Board Name</td>
+            <td><input class="CheckClass" type="checkbox" name="25" value="boardName"  onclick="uncheck()" id="boardName"/></td>
+        </tr>
+        <tr>
+            <td>HSC Seat No.</td>
+            <td><input class="CheckClass" type="checkbox" name="26" value="hscSeatNumber" onclick="uncheck()" id="hscSeatNumber"/></td>
+        </tr>
+        <tr>
+            <td>Admission Quota</td>
+            <td><input class="CheckClass" type="checkbox" name="27" value="admissionQuota" onclick="uncheck()" id="admissionQuota"/></td>
+        </tr>
+        <tr>
+            <td>Exam Center</td>
+            <td><input class="CheckClass" type="checkbox" name="28" value="examCenter" onclick="uncheck()" id="examCenter"/></td>
+        </tr>
+        <tr>
+            <td>Year Of Passing</td>
+            <td><input class="CheckClass" type="checkbox" name="29" value="yearOfPassing" onclick="uncheck()" id="yearOfPassing"/></td>
+        </tr>
+        <tr>
+            <td>School Name</td>
+            <td><input class="CheckClass" type="checkbox" name="30" value="schoolName" onclick="uncheck()" id="schoolName"/></td>
+        </tr>
+        <tr>
+            <td>Marks Info</td>
+            <td><input class="CheckClass" type="checkbox" name="31" value="marksInfo" onclick="uncheck()" id="marksInfo"/></td>
+        </tr>
+        <tr>
+            <td>Obtained Marks</td>
+            <td><input class="CheckClass" type="checkbox" name="32" value="obtainedMarks" onclick="uncheck()" id="obtainedMarks"/></td>
+        </tr>
+        <tr>
+            <td>Total Marks</td>
+            <td><input class="CheckClass" type="checkbox" name="33" value="totalMarks" onclick="uncheck()" id="totalMarks"/></td>
+        </tr>
+        <tr>
+            <td>GSEB</td>
+            <td><input class="CheckClass" type="checkbox" name="34" value="gseb" onclick="uncheck()" id="gseb"/></td>
+        </tr>
+        <tr>
+            <td>PecNumber</td>
+            <td><input class="CheckClass" type="checkbox" name="35" value="pecNumber" onclick="uncheck()" id="pecNumber"/></td>
+        </tr>
+        <tr>
+            <td>PecDate</td>
+            <td><input class="CheckClass" type="checkbox" name="36" value="pecDate" onclick="uncheck()" id="pecDate"/></td>
+        </tr>
+        <tr>
+            <td>FecNumber</td>
+            <td><input class="CheckClass" type="checkbox" name="37" value="fecNumber" onclick="uncheck()" id="fecNumber"/></td>
+        </tr>
+        <tr>
+            <td>FecDate</td>
+            <td><input class="CheckClass" type="checkbox" name="38" value="fecDate" onclick="uncheck()" id="fecDate"/></td>
+        </tr>
+        <tr>
+            <td>College Name</td>
+            <td><input class="CheckClass" type="checkbox" name="39" value="collegeName" onclick="uncheck()" id="collegeName"/></td>
+        </tr>
+        <tr>
+            <td>College Code</td>
+            <td><input class="CheckClass" type="checkbox" onclick="uncheck()" name="40" value="collegeCode" id="collegeCode"/></td>
+        </tr>
+        <tr>
+            <td>Admission Year</td>
+            <td><input class="CheckClass" type="checkbox" name="41" value="admissionYear" onclick="uncheck()" id="admissionYear"/></td>
+        </tr>
+        <tr>
+            <td>Faculty</td>
+            <td><input class="CheckClass" type="checkbox" name="42" value="faculty" onclick="uncheck()" id="faculty"/></td>
+        </tr>
+        <tr>
+            <td>Course Name</td>
+            <td><input class="CheckClass" type="checkbox" name="43" value="courseName" onclick="uncheck()" id="courseName"/></td>
+        </tr>
+        <tr>
+            <td>Course Year</td>
+            <td><input class="CheckClass" type="checkbox" name="44" value="courseYear" onclick="uncheck()" id="courseYear"/></td>
+        </tr>
+        <tr>
+            <td>Faculty Code</td>
+            <td><input class="CheckClass" type="checkbox" name="45" value="facultyCode" onclick="uncheck()" id="facultyCode"/></td>
+        </tr>
+        <tr>
+            <td>Course Code</td>
+            <td><input class="CheckClass" type="checkbox" name="46" value="courseCode" onclick="uncheck()" id="courseCode"/></td>
+        </tr>
+        <tr>
+            <td>Search Key</td>
+            <td><input class="CheckClass" type="checkbox" name="47" value="searchKey" onclick="uncheck()" id="searchKey"/></td>
+        </tr>
+        <tr>
+            <td>Form No.</td>
+            <td><input class="CheckClass" type="checkbox" name="48" value="FormNumber" onclick="uncheck()" id="FormNumber"/></td>
+        </tr>
+        <tr>
+            <td>Email ID</td>
+            <td><input class="CheckClass" type="checkbox" name="49" value="EmailId" onclick="uncheck()" id="EmailId"/></td>
+        </tr>
+        <tr>
+            <td>NEET Exam Roll No.</td>
+            <td><input class="CheckClass" type="checkbox" name="50" value="NEETExamRollNo" onclick="uncheck()" id="NEETExamRollNo"/></td>
+        </tr>
+        <tr>
+            <td>NEET Exam Year</td>
+            <td><input class="CheckClass" type="checkbox" name="51" value="NEETExamYear" onclick="uncheck()" id="NEETExamYear"/></td>
+        </tr>
+        <tr>
+            <td>NEET Exam Obtained Marks</td>
+            <td><input class="CheckClass" type="checkbox" name="52" value="NEETObtainedMarks" onclick="uncheck()" id="NEETObtainedMarks"/></td>
+        </tr>
+        <tr>
+            <td>NEET Total Marks</td>
+            <td><input class="CheckClass" type="checkbox" name="53" value="NEETTotalMarks" onclick="uncheck()" id="NEETTotalMarks"/></td>
+        </tr>
+        <tr>
+            <td>NEET Percentage</td>
+            <td><input class="CheckClass" type="checkbox" name="54" value="NEETPaercentage" onclick="uncheck()" id="NEETPaercentage"/></td>
+        </tr>
+        <tr>
+            <td>Bank Account No.</td>
+            <td><input class="CheckClass" type="checkbox" name="55" value="BankAccountNo" onclick="uncheck()" id="BankAccountNo"/></td>
+        </tr>
+        <tr>
+            <td>Bank Name</td>
+            <td><input class="CheckClass" type="checkbox" name="56" value="BankName" onclick="uncheck()" id="BankName"/></td>
+        </tr>
+        <tr>
+            <td>IFSC No.</td>
+            <td><input class="CheckClass" type="checkbox" name="57" value="IFSCNo" onclick="uncheck()" id="IFSCNo"/></td>
+        </tr>
+        <tr>
+            <td>First Year Result</td>
+            <td><input class="CheckClass" type="checkbox" name="58" value="FristYearResult" onclick="uncheck()" id="FristYearResult"/></td>
+        </tr>
+        <tr>
+            <td>Clinical Batch No.</td>
+            <td><input class="CheckClass" type="checkbox" name="59" value="ClinicalBatchNo" onclick="uncheck()" id="ClinicalBatchNo"/></td>
+        </tr>
+        <tr>
+            <td>Second Year Result</td>
+            <td><input class="CheckClass" type="checkbox" name="60" value="SecondYearResult" onclick="uncheck()" id="SecondYearResult"/></td>
+        </tr>
+        <tr>
+            <td>Third Year Part-1 Result</td>
+            <td><input class="CheckClass" type="checkbox" name="61" value="ThirdYearPart1Result" onclick="uncheck()" id="ThirdYearPart1Result"/></td>
+        </tr>
+        <tr>
+            <td>Third Year Part-2 Result</td>
+            <td><input class="CheckClass" type="checkbox" name="62" value="ThirdYearPart2Result" onclick="uncheck()" id="ThirdYearPart2Result"/></td>
+        </tr>
+        <tr>
+            <td>Internship Order No.</td>
+            <td><input class="CheckClass" type="checkbox" name="63" value="InternshipOrderNo" onclick="uncheck()" id="InternshipOrderNo"/></td>
+        </tr>
+        <tr>
+            <td>UG Bond Solvancy Name</td>
+            <td><input class="CheckClass" type="checkbox" name="64" value="UGBondSolvancyName" onclick="uncheck()" id="UGBondSolvancyName"/></td>
+        </tr>
+        <tr>
+            <td>UG Bank Gaurantee</td>
+            <td><input class="CheckClass" type="checkbox" name="65" value="UGBankGaurantee" onclick="uncheck()" id="UGBankGaurantee"/></td>
+        </tr>
+        <tr>
+            <td>UG Bond Surity Address</td>
+            <td><input class="CheckClass" type="checkbox" name="66" value="UGBondSurityAddress" onclick="uncheck()" id="UGBondSurityAddress"/></td>
+        </tr>
+        <tr>
+            <td>UG Bond Surity Phone</td>
+            <td><input class="CheckClass" type="checkbox" name="67" value="UGBondSurityPhone" onclick="uncheck()" id="UGBondSurityPhone"/></td>
+        </tr>
+        <tr>
+            <td>UG Bond Surity Mobile</td>
+            <td><input class="CheckClass" type="checkbox" name="68" value="UGBondSurityemailid" onclick="uncheck()" id="UGBondSurityemailid"/></td>
+        </tr>
+        <tr>
+            <td>UG Bond Amount</td>
+            <td><input class="CheckClass" type="checkbox" name="69" value="UGBondAmount" onclick="uncheck()" id="UGBondAmount"/></td>
+        </tr>
+        <tr>
+            <td>UG Bond Paid Amount</td>
+            <td><input class="CheckClass" type="checkbox" name="70" value="UGBondPaidAmount" onclick="uncheck()" id="UGBondPaidAmount"/></td>
+        </tr>
+        <tr>
+            <td>UG Bond Paid Challan No.</td>
+            <td><input class="CheckClass" type="checkbox" name="71" value="UGBondPaidChallanNo" onclick="uncheck()" id="UGBondPaidChallanNo"/></td>
+        </tr>
+        <tr>
+            <td>UG Bond Paid Challan Date</td>
+            <td><input class="CheckClass" type="checkbox" name="72" value="UGBondPaidChallanDate" onclick="uncheck()" id="UGBondPaidChallanDate"/></td>
+        </tr>
+        <tr>
+            <td rowspan="2"><select>
+                <option onclick="selectAll()" id="selectAll">SELECT ALL</option>
+                <option onclick="selectNone()" id="selectNone">SELECT NONE</option>
+            </select></td>
+            <input type="hidden" name="count" id="count" value="0"/>
+            <input type="hidden" name="fields" id="fields" value="0"/>
+        </tr>
+        <tr>
+            <td>
+                <input type="submit" class="sub" name="down1"  value="Submit" />
+            </td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>

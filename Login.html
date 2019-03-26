@@ -1,0 +1,32 @@
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>Student Management System/Login</title>
+		<link rel="shortcut icon" type="image/x-icon" href="image/logo.ico" />
+		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Arvo">
+		<link rel="stylesheet"  href="css/login.css" /> 
+		<script src="js/login.js" type="text/javascript"> </script>
+	</head>
+	<body>
+		<center>
+		<div class="contain">
+			</br>
+			<p style="color:#536976">GOVERNMENT MEDICAL COLLEGE,SURAT</p>
+			<img class="imgMob" src="image/college_logo.jpg" alt="College Logo" style="max-width:30% ; border-radius:50%;" /></br></br>
+			<form action="home.php?open=search" method="POST" enctype="application/x-www-form-urlencoded">
+				<table cellpadding="0">
+					<tr><td colspan="2" style="font-size:14px;font-weight:bold"><lable class="tag">Username</lable></td></tr>
+					<tr><td colspan="2"><input type="text" placeholder="  Type Your Username"  id="username" onclick=""  ></input><br/><br/></td></tr>
+					<tr><td colspan="2" style="font-size:14px;font-weight:bold"><lable class="tag">Password</lable></td></tr>
+					<tr><td colspan="2"><input type="password" autocomplete="off" placeholder="  Type Your Password" id="password" ></input><br/></td></tr>
+					<tr><td><input type="checkbox"  autocomplete="off" name="showpass" id="showpass" value="ShowPassword" onclick="ShowPass()"></input><label onclick="ShowPass()">Show Password</label><br><br></td></tr>
+					<tr><td><select><option>OS</option><option>FACULTY</option></select></td><td><input type="submit" value="LOG IN"></input></td></tr><br/><br/>
+				</table>
+			</form>
+			</br>
+			</br>
+		</div>
+		</center>
+	</body>
+</html>

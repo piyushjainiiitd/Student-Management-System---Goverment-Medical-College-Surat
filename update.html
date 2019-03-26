@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<title>Student Management System/Login</title>
+	<link rel="shortcut icon" type="image/x-icon" href="image/favicon.ico" />
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Arvo">
+	<link rel="stylesheet"  href="css/update.css" />
+	<script>
+	function show(n)
+	{
+		var x = document.getElementsByClassName("tab");
+		var y = document.getElementsByClassName("button1");
+		x[n].style.display = "block";
+		x[(n+1)%2].style.display = "none";
+		y[n].style.backgroundColor="orange";
+		y[(n+1)%2].style.backgroundColor="#4CAF50";
+	}
+	</script>
+</head>
+<body>
+<center>
+	<button class="button1" onClick='show(0)'>UNIVERSITY INFORMATION</button>
+	<button class="button1" onClick='show(1)'>COLLEGE INFORMATION</button>
+
+<form id="regForm" action="">
+<div class="tab">
+  <table>
+        <tr>
+            <td>Enrollment ID </td>
+            <td><input type="text" name="EnrollmentId" placeholder="Enter Enrollment Number" size="25"  /></td>
+        </tr>
+        <tr>
+            <td>Surname</td>
+            <td><input type="text" name="Surname" placeholder="Enter Surname" size="25"  /></td>
+        </tr>
+        <tr>
+            <td>First Name</td>
+            <td><input type="text" name="firstname" placeholder="Enter Firstname" size="25"  /></td>
+        </tr>
+        <tr>
+            <td>Second Name</td>
+            <td><input type="text" name="secondname" placeholder="Enter Second Name" size="25"  /></td>
+        </tr>
+        <tr>
+            <td>Mother Name</td>
+            <td><input type="text" name="mothername" placeholder="Enter Mother Name" size="25"  /></td>
+        </tr>
+        <tr>
+            <td>Adhaarcard Number </td>
+            <td><input type="text" name="AdharNumber" placeholder="Enter Adhaarcard Number" size="25"  /></td>
+        </tr>
+        <tr>
+            <td>Permanent Address</td>
+            <td><textarea name="permanentAddress" placeholder="Enter Permanent Address" size="25"  ></textarea></td>
+        </tr>
+        <tr>
+            <td>Permanent City</td>
+            <td><input type="text" name="permanentCity" placeholder="Enter Permanent City" size="25"  /></td>
+        </tr>
+        <tr>
+            <td>Permanent Pincode</td>
+            <td><input type="text" name="permanentPincode" placeholder="Enter Permanent Pincode" size="25"  /></td>
+        </tr>
+        <tr>
+            <td>Permanent Phone</td>
+            <td><input type="text" name="permanentPhone" placeholder="Enter Permanent Phone" size="25"  /></td>
+        </tr>
+        <tr>
+            <td>Permanent Mobile</td>
+            <td><input type="text" name="permanentMobile" placeholder="Enter Permanent Mobile" size="25"  /></td>
+        </tr>
+				<tr>
+            <td>Correspondance Address</td>
+            <td><textarea name="correspondanceAddress" placeholder="Enter Correspondance Address" size="25"  ></textarea></td>
+        </tr>
+        <tr>
+            <td>Correspondance City</td>
+            <td><input type="text" name="correspondanceCity" placeholder="Enter Correspondance City" size="25"  /></td>
+        </tr>
+        <tr>
+            <td>Correspondance Pincode</td>
+            <td><input type="text" name="correspondancePincode" placeholder="Enter Correspondance Pincode" size="25"  /></td>
+        </tr>
+        <tr>
+            <td>Correspondance Phone</td>
+            <td><input type="text" name="correspondancePhone" placeholder="Enter Correspondance Phone" size="25"  /></td>
+        </tr>
+        <tr>
+            <td>Correspondance Mobile</td>
+            <td><input type="text" name="correspondanceMobile" placeholder="Enter Correspondance Mobile" size="25"  /></td>
+        </tr>
+        <tr>
+            <td>Date Of Birth</td>
+            <td><input type="date" name="dob" placeholder="Enter Date Of Birth"  /></td>
+        </tr>
+        <tr>
+            <td>Gender</td>
+            <td><label for="Male1"><input type="radio" id="Male1" name="gender" value="Male"/>Male</label><label for="Female1"><input type="radio" id="Female1" name="gender" value="Female" />Female</label></td>
+        </tr>
+        <tr>
+            <td>Ph</td>
+            <td><input type="text" name="ph" placeholder="Enter Ph"  /></td>
+        </tr>
+        <tr>
+            <td>Nationality</td>
+            <td><input type="text" name="nationality" placeholder="Enter Nationality" size="25"  /></td>
+        </tr>
+        <tr>
+            <td>Caste</td>
+            <td><input type="text" name="caste" placeholder="Enter Caste"  /></td>
+        </tr>
+        <tr>
+            <td>Sub Caste</td>
+            <td><input type="text" name="subCaste" placeholder="Enter SubCaste" size="25"  /></td>
+        </tr>
+        <tr>
+            <td>Minority</td>
+            <td><input type="radio" name="minority" value="yes" />YES<input type="radio" name="minority" value="no" />NO</td>
+        </tr>
+        <tr>
+            <td>Religion</td>
+            <td><input type="text" name="religion" placeholder="Enter Religion" size="25"  /></td>
+        </tr>
+        <tr>
+            <td>Board Name</td>
+            <td><input type="text" name="boardName" placeholder="Enter Board Name" size="25"  /></td>
+        </tr>
+        <tr>
+            <td>HSC Seat No.</td>
+            <td><input type="text" name="hscSeatNumber" placeholder="Enter HSC Seat NO." size="25"  /></td>
+        </tr>
+		<tr>
+            <td>Admission Quota</td>
+            <td><input type="text" name="admissionQuota" placeholder="Enter Admission Quota" size="25"  /></td>
+        </tr>
+        <tr>
+            <td>Exam Center</td>
+            <td><input type="text" name="examCenter" placeholder="Enter Exam Center" size="25"  /></td>
+        </tr>
+        <tr>
+            <td>Year Of Passing</td>
+            <td><input type="number" name="yearofpassing" placeholder="Enter Year OF Passing" size="25"  /></td>
+        </tr>
+        <tr>
+            <td>School Name</td>
+            <td><input type="text" name="schoolName" placeholder="Enter School Name" size="25"  /></td>
+        </tr>
+        <tr>
+            <td>Marksheet Info.</td>
+            <td><input type="text" name="marksheetInfo" placeholder="Enter Marksheet Info." size="25"  /></td>
+        </tr>
+        <tr>
+            <td>Obtained Marks</td>
+            <td><input type="number" name="obtainedMarks" placeholder="Enter Obtained Marks" size="25"  /></td>
+        </tr>
+        <tr>
+            <td>Total Marks</td>
+            <td><input type="number" name="totalMarks" placeholder="Enter Total Marks" size="25"  /></td>
+        </tr>
+        <tr>
+            <td>GSEB</td>
+            <td><input type="text" name="GSEB" placeholder="Enter GSEB" size="25"  /></td>
+        </tr>
+		        <tr>
+            <td>PecNumber</td>
+            <td><input type="text" name="pecNumber" placeholder="Enter PecNumber" size="25"  /></td>
+        </tr>
+        <tr>
+            <td>PecDate</td>
+            <td><input type="date" name="pecdate" placeholder="Enter PecDate" size="25"  /></td>
+        </tr>
+        <tr>
+            <td>FecNumber</td>
+            <td><input type="text" name="fecNumber" placeholder="Enter FecNumber" size="25"  /></td>
+        </tr>
+        <tr>
+            <td>FecDate</td>
+            <td><input type="date" name="fecdate" placeholder="Enter FecDate" size="25"  /></td>
+        </tr>
+		<tr>
+            <td>College Name</td>
+            <td><input type="text" name="collegeName" placeholder="Enter College Name" size="25"  /></td>
+        </tr>
+        <tr>
+            <td>College Code</td>
+            <td><input type="number" name="collegeCode" placeholder="Enter College Code" size="25"  /></td>
+        </tr>
+		<tr>
+            <td>Admission Year</td>
+            <td><input type="text" name="admissionYear" placeholder="Enter Admission Year" size="25"  /></td>
+        </tr>
+        <tr>
+            <td>Faculty</td>
+            <td><input type="text" name="faculty" placeholder="Enter Faculty" size="25"  /></td>
+        </tr>
+        <tr>
+            <td>Course Name</td>
+            <td><input type="text" name="courseName" placeholder="Enter Course Name" size="25"  /></td>
+        </tr>
+        <tr>
+            <td>Course Year</td>
+            <td><input type="number" name="courseYear" placeholder="Enter Course Year" size="25"  /></td>
+        </tr>
+		<tr>
+            <td>Faculty Code</td>
+            <td><input type="number" name="facultyCode" placeholder="Enter Faculty Code" size="25"  /></td>
+        </tr>
+        <tr>
+            <td>Course Code</td>
+            <td><input type="number" name="courseCode" placeholder="Enter Course Code" size="25"  /></td>
+        </tr>
+        <tr>
+            <td>Search Key</td>
+            <td><input type="text" name="searchKey" placeholder="Enter Search Key" size="25"  /></td>
+        </tr>
+        <tr>
+            <td>Form Number</td>
+            <td><input type="text" name="formNummber" placeholder="Enter Form Number" size="25"  /></td>
+        </tr>
+    </table>
+</div>
+
+<div class="tab">
+  <table>
+		<tr>
+            <td>Email ID</td>
+            <td><input type="email" name="EmailId" placeholder="Enter Email ID" size="25"  /></td>
+        </tr>
+		<tr>
+            <td>NEET Exam Roll No</td>
+            <td><input type="text" name="NEETExamRollNo" placeholder="Enter NEET Exam Roll No" size="25"  ></input></td>
+        </tr>
+		<tr>
+            <td>NEET Exam Year</td>
+            <td><input type="text" name="NEETExamYear" placeholder="Enter NEET Exam Year" size="25"  ></input></td>
+        </tr>
+		<tr>
+            <td>NEET Obtained Marks</td>
+            <td><input type="text" name="NEETObtainedMarks " placeholder="Enter NEET Obtained Marks" size="25"  ></input></td>
+        </tr>
+		<tr>
+            <td>NEET Total Marks</td>
+            <td><input type="text" name="NEETTotalMarks" placeholder="Enter NEET Total Marks" size="25"  ></input></td>
+        </tr>
+		<tr>
+            <td>NEET Percentage</td>
+            <td><input type="text" name="NEETPercentage" placeholder="Enter NEET Percentage" size="25"  ></input></td>
+        </tr>
+		<tr>
+            <td>Bank Account Number</td>
+            <td><input type="text" name="BankAccountNo" placeholder="Enter Bank Account Number" size="25"  /></td>
+        </tr>
+		<tr>
+            <td>Bank Name</td>
+            <td><input type="text" name="BankName" placeholder="Enter Bank Name " size="25"  /></td>
+        </tr>
+		<tr>
+            <td>IFSC Number </td>
+            <td><input type="text" name="IFSCNo" placeholder="Enter IFSC Number" size="25"  /></td>
+        </tr>
+		<tr>
+            <td>First Year Result</td>
+            <td><input type="text" name="FirstYear" placeholder="Enter First Year Result" size="25"  /></td>
+        </tr>
+		<tr>
+            <td>Clinical Batch No.</td>
+            <td><input type="text" name="ClinicalBatchNo" placeholder="Enter Clinical Batch No." size="25"  /></td>
+        </tr>
+        <tr>
+            <td>Second Year Result</td>
+            <td><input type="text" name="SecondYear" placeholder="Enter Second Year Result" size="25"  /></td>
+        </tr>
+        <tr>
+            <td>Third Year Part-1 Result</td>
+            <td><input type="text" name="ThirdYearP1" placeholder="Enter Third Year Part1 Result" size="25"  /></td>
+        </tr>
+        <tr>
+            <td>Third Year Part-2 Result</td>
+            <td><input type="text" name="ThirdYearP2" placeholder="Enter Third Year Part2 Result" size="25"  /></td>
+        </tr>
+
+        <tr>
+            <td>Internship Order No.</td>
+            <td><input type="text" name="InternshipOrderNo" placeholder="Enter Internship Order No." size="25"  /></td>
+        </tr>
+		<tr>
+            <td>UG Bond Solvancy Name</td>
+            <td><input type="text" name="UGBondSolvancyName" placeholder="Enter UG Bond Solvancy Name" size="25"  ></input></td>
+        </tr>
+        <tr>
+            <td>UG Bank Gaurantee</td>
+            <td><input type="text" name="UGBankGaurantee" placeholder="Enter UG Bank Gaurantee" size="25"  /></td>
+        </tr>
+		<tr>
+            <td>UG Bond Surity Address</td>
+            <td><textarea name="UGBondSurityAddress" placeholder="Enter Surity Address" size="25"  ></textarea></td>
+        </tr>
+        <tr>
+            <td>UG Bond Surity Phone</td>
+            <td><input type="text" name="UGBondSurityPhone" placeholder="Enter Surity Phone" size="25"  /></td>
+        </tr>
+		<tr>
+            <td>UG Bond Surity Email ID</td>
+            <td><input type="email" name="UGBondEmailId" placeholder="Enter UG Bond Surity Email ID" size="25"  /></td>
+        </tr>
+		<tr>
+            <td>UG Bond Amount</td>
+            <td><input type="number" name="UGBondAmount" placeholder="Enter UG Bond Amount" size="25"  /></td>
+        </tr>
+		<tr>
+            <td>UG Bond Paid Amount</td>
+            <td><input type="number" name="UGBondPaidAmount" placeholder="Enter UG Bond Paid Amount" size="25"  /></td>
+        </tr>
+		<tr>
+            <td>UG Bond Challan Number</td>
+            <td><input type="text" name="UGBondChallanNumber" placeholder="Enter UG Bond Challan Number" size="25"  /></td>
+        </tr>
+		<tr>
+            <td>UG Bond Challan Date</td>
+            <td><input type="date" name="UGBondChallanDate" placeholder="Enter UG Bond Challan Date" size="25"  /></td>
+        </tr>
+		<tr>
+            <td></td>
+            <td style="float:right;"><input id="done"type="submit" style="background-color: #4CAF50;cursor: pointer;width: 100%;font-size: 17px;padding: 10px 20px;border: 1px solid #aaaaaa;color: #ffffff;" size="25"/></td>
+        </tr>
+    </table>
+</div>
+</form>
+</center>
+</body>
+<script>
+	show(0);
+</script>
+</html>

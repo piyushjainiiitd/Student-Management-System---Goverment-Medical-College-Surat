@@ -1,0 +1,91 @@
+
+label 
+{
+  display: inline-block;
+}
+td 
+{
+    padding-top: .5em;
+    padding-bottom: .5em;
+}
+*
+{
+	font-family: 'Arvo', serif;
+}
+body
+{
+	background:linear-gradient(to right,#292e49,#536976);
+}
+#regForm 
+{
+	background-color: #ffffff;
+	margin: 100px auto;
+	padding: 40px;
+	width: 50%;
+	min-width: 300px;
+}
+
+h1 {
+  text-align: center;  
+}
+
+input:not([type=checkbox]):not([type=radio]),textarea
+{
+	padding: 10px;
+	width: 100%;
+	font-size: 17px;
+	border: 1px solid #aaaaaa;
+}
+
+/* Mark input boxes that gets an error on validation: */
+input.invalid {
+  background-color: #ffdddd;
+}
+
+/* Hide all steps by default: */
+.tab 
+{
+  display: none;
+} 
+
+button 
+{
+	background-color: #4CAF50;
+	color: #ffffff;
+	border: none;
+	padding: 10px 20px;
+	font-size: 17px;
+	cursor: pointer;
+}
+
+button:hover 
+{
+	opacity: 0.8;
+}
+
+#prevBtn 
+{
+	background-color: #bbbbbb;
+}
+
+/* Make circles that indicate the steps of the form: */
+.step 
+{
+	height: 15px;
+	width: 15px;
+	margin: 0 2px;
+	background-color: #bbbbbb;
+	border: none;  
+	border-radius: 50%;
+	display: inline-block;
+	opacity: 0.5;
+}
+
+.step.active 
+{
+	opacity: 1;
+}
+.step.finish 
+{
+	background-color: #4CAF50;
+}

@@ -1,0 +1,54 @@
+
+label 
+{
+  display: inline-block;
+}
+/* td 
+{
+    padding-top: .5em;
+    padding-bottom: .5em;
+} */
+*
+{
+	font-family: 'Arvo', serif;
+}
+body
+{
+	background:linear-gradient(to right,#292e49,#536976);
+}
+#regForm 
+{
+	background-color: #ffffff;
+	margin-top: 5vh;
+	margin-left: 30vw;
+	padding: 40px;
+	width: 21vw;
+	min-width: 300px;
+}
+
+h1 {
+  text-align: center;  
+}
+
+input[type="checkbox"]
+{
+	padding-left: 30px;
+	margin-left: 30px;
+}
+
+
+
+input[type="submit"]
+{
+	background-color: mediumslateblue;
+	color: #ffffff;
+	border: none;
+	padding: 10px 20px;
+	font-size: 17px;
+	cursor: pointer;
+}
+
+input[type="submit"]:hover 
+{
+	opacity: 0.9;
+}

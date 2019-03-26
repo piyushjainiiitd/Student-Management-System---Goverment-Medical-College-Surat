@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Student Management System/Login</title>
+    <link rel="shortcut icon" type="image/x-icon" href="image/logo.ico" />
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Arvo">
+    <link rel="stylesheet" href="css/search.css"/>
+</head>
+
+<body style="background-color:#536976">
+    <center>
+    <div class="contain">
+    </br>
+</br>
+<form method="POST" action="searchresult.php" target enctype="application/x-www-form-urlencoded">
+    <table cellpadding="0">
+            <th colspan="2" style="color:#536976;text-align: center;" >STUDENT SEARCH</th>
+                <tr>
+                    <td class="tag">Enrollment ID</td>
+                    <td><input type="text" placeholder="Type Enrollment ID" id="enrollment"  name="enrollment" ></input>
+                </tr>
+                <tr>
+                    <td class="tag">First Name</td>
+                    <td><input type="text" placeholder="Type First Name" id="firstname" name="firstname" ></input>
+                </tr>
+                <tr>
+                    <td class="tag">Last Name</td>
+                    <td><input type="text" placeholder="Type Last Name" id="lastname" name="lastname" ></input>
+                </tr>
+                <tr>
+                    <td class="tag">Mother Name</td>
+                    <td><input type="text" placeholder="Type Mother Name" id="mothername" name="mothername"></input>
+                </tr>
+                <tr>
+                    <td class="tag">Adharcard No.</td>
+                    <td><input type="text" placeholder="Type Adharcard No." id="adharcard" name="adharcard"></input>
+                </tr>
+                <tr>
+                    <td class="tag">Date Of Birth</td>
+                    <td><input type="date" placeholder=" Type Date Of Birth" id="dob" name="dob"></input>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td ><input type="submit" value="UPDATE" name="operation" /><input type="submit" value="DELETE" style="float: right" name="operation"/></td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="font-size:14px;font-weight:bold;color: red"><br>Note : If You don't want to fill any of the fields leave it as it is.</td>
+                </tr>
+            </table>
+        </form>
+        </br>
+        </br>
+    </div>
+    </center>
+</body>
+</html>

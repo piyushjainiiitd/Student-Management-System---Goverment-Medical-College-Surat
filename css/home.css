@@ -1,0 +1,44 @@
+*
+{
+	font-family: 'Arvo', serif;
+}
+body 
+{
+  font-size: 17px;
+  background:linear-gradient(to right,#292e49,#536976);
+}
+.header {
+  background-color: #f1f1f1;
+  text-align: center;
+  }
+
+ img{
+   height: 15vh;
+ } 
+ /* table{ */
+  /* width: 100vw; */
+ /* } */
+.content {
+  padding: 100px;
+}
+  
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+  
+.sticky + .content {
+  padding-top: 60px;
+}
+
+iframe{
+  height: 72vh;
+}
+
+@media all and (orientation:portrait)
+{
+  img{
+    height: 10vh;
+  }
+} 
